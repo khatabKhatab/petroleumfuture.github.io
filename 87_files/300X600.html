@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0131)https://tpc.googlesyndication.com/sadbundle/16097603791902706832/300x600/300X600.html?csp=er3#t=1938697732235999553&p=file%3A%2F%2F -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./exitapi-impl.js.download" type="text/javascript"></script><script src="./addata.js.download" type="text/javascript"></script><meta content="width=300,height=600" name="ad.size"><style>body{margin:0}</style><title>300X600</title><script src="./easeljs-0.8.1.min.js.download"></script><script src="./tweenjs-0.6.1.min.js.download"></script><script src="./movieclip-0.8.1.min.js.download"></script><script src="./preloadjs-0.6.1.min.js.download"></script><script src="./300X600.js.download"></script><script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._300X600();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+			/* start*/
+	var clickTAG="http://magrabi-hospitals.com/lp3/";
+	document.getElementById("canvas").addEventListener("click", obenwebsite);
+	function obenwebsite(evt) {
+	window.open(clickTAG,"_blank");
+	}
+	/* End*/
+}
+</script><script type="text/javascript" src="./aXNjA53wkEezSIZZYd1pyMkv-q1HQWFUMg3c80I_Vqs.js.download"></script></head><body onclick="ExitApi.exit();" onload="init();" style="cursor:pointer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<canvas height="600" id="canvas" style="background-color:#FFFFFF; cursor:pointer" width="300"></canvas>
+
+</body></html>
